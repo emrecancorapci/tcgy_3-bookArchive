@@ -1,4 +1,4 @@
-﻿namespace tcgy_3_bookArchive
+﻿namespace tcgy_3_bookArchive.Forms
 {
     partial class BookForm
     {
@@ -85,9 +85,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
+            this.label3.Size = new System.Drawing.Size(60, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Publisher :";
+            this.label3.Text = "Publisher* :";
             // 
             // cb_publisher
             // 
@@ -185,9 +185,9 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(303, 99);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(61, 13);
+            this.label8.Size = new System.Drawing.Size(57, 13);
             this.label8.TabIndex = 1;
-            this.label8.Text = "Condition* :";
+            this.label8.Text = "Condition :";
             // 
             // l_language
             // 
@@ -208,12 +208,14 @@
             // 
             // b_submit
             // 
+            this.b_submit.BackColor = System.Drawing.Color.Honeydew;
+            this.b_submit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.b_submit.Location = new System.Drawing.Point(485, 234);
             this.b_submit.Name = "b_submit";
             this.b_submit.Size = new System.Drawing.Size(75, 23);
             this.b_submit.TabIndex = 5;
             this.b_submit.Text = "Submit";
-            this.b_submit.UseVisualStyleBackColor = true;
+            this.b_submit.UseVisualStyleBackColor = false;
             this.b_submit.Click += new System.EventHandler(this.b_submit_Click);
             // 
             // b_addAuthor
@@ -224,15 +226,20 @@
             this.b_addAuthor.TabIndex = 5;
             this.b_addAuthor.Text = "Add Author";
             this.b_addAuthor.UseVisualStyleBackColor = true;
+            this.b_addAuthor.Click += new System.EventHandler(this.b_addAuthor_Click);
             // 
             // b_cancel
             // 
+            this.b_cancel.BackColor = System.Drawing.Color.MistyRose;
+            this.b_cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.b_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.b_cancel.Location = new System.Drawing.Point(404, 234);
             this.b_cancel.Name = "b_cancel";
             this.b_cancel.Size = new System.Drawing.Size(75, 23);
             this.b_cancel.TabIndex = 5;
             this.b_cancel.Text = "Cancel";
-            this.b_cancel.UseVisualStyleBackColor = true;
+            this.b_cancel.UseVisualStyleBackColor = false;
+            this.b_cancel.Click += new System.EventHandler(this.b_cancel_Click);
             // 
             // b_addPublisher
             // 
@@ -242,6 +249,7 @@
             this.b_addPublisher.TabIndex = 5;
             this.b_addPublisher.Text = "Add Publisher";
             this.b_addPublisher.UseVisualStyleBackColor = true;
+            this.b_addPublisher.Click += new System.EventHandler(this.b_addPublisher_Click);
             // 
             // label6
             // 
@@ -270,20 +278,27 @@
             // 
             // BookForm
             // 
+            this.AcceptButton = this.b_submit;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.b_cancel;
             this.ClientSize = new System.Drawing.Size(575, 269);
-            this.Controls.Add(this.b_addPublisher);
+            this.Controls.Add(this.tb_name);
+            this.Controls.Add(this.cb_author);
+            this.Controls.Add(this.cb_publisher);
+            this.Controls.Add(this.cb_language);
+            this.Controls.Add(this.tb_pages);
+            this.Controls.Add(this.dtp_publishDate);
+            this.Controls.Add(this.tb_isbn);
+            this.Controls.Add(this.tb_edition);
+            this.Controls.Add(this.tb_condition);
+            this.Controls.Add(this.rtb_summary);
             this.Controls.Add(this.b_addAuthor);
+            this.Controls.Add(this.b_addPublisher);
             this.Controls.Add(this.b_cancel);
             this.Controls.Add(this.b_submit);
-            this.Controls.Add(this.rtb_summary);
-            this.Controls.Add(this.dtp_publishDate);
-            this.Controls.Add(this.cb_language);
             this.Controls.Add(this.l_language);
-            this.Controls.Add(this.cb_publisher);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.cb_author);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.pagesText);
@@ -293,13 +308,9 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.tb_pages);
-            this.Controls.Add(this.tb_condition);
-            this.Controls.Add(this.tb_edition);
-            this.Controls.Add(this.tb_isbn);
-            this.Controls.Add(this.tb_name);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BookForm";
-            this.Text = "BookForm";
+            this.Text = "Add Book";
             this.Load += new System.EventHandler(this.BookForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

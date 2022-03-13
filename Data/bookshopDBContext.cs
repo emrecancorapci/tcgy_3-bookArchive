@@ -13,12 +13,15 @@ namespace tcgy_3_bookArchive.Data
         public DbSet<Publisher> Publishers { get; set; }
         public DbSet<Language> Languages { get; set; }
 
+        private const string DataSource = "(localdb)\\emre";
+        private const string DatabaseName = "bookshopDB";
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
-                @"Data Source=(localdb)\emre; 
-                                Database=bookshopDB;
-                                Integrated Security=yes;");
+                $@"Data Source={DataSource}; 
+                   Database={DatabaseName};
+                   Integrated Security=yes;");
             Console.WriteLine(optionsBuilder.IsConfigured);
         }
 

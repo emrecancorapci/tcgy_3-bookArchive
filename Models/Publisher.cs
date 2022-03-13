@@ -10,7 +10,7 @@ namespace tcgy_3_bookArchive.Entities
     {
         public int ID { get; set; }
         public string Name { get; set; }
-        public string Info { get; set; }
+        public string Info { get; set; }  
         public ICollection<BooksPublishers> Books { get; set; }
 
     }
