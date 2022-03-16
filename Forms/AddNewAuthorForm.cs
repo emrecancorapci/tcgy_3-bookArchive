@@ -3,12 +3,13 @@ using System.Linq;
 using System.Windows.Forms;
 using tcgy_3_bookArchive.Data;
 using tcgy_3_bookArchive.Entities;
+using tcgy_3_bookArchive.Models;
 
 namespace tcgy_3_bookArchive.Forms
 {
-    public partial class AuthorForm : Form
+    public partial class AddNewAuthorForm : Form
     {
-        public AuthorForm()
+        public AddNewAuthorForm()
         {
             InitializeComponent();
         }

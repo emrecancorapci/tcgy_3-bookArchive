@@ -1,6 +1,6 @@
 ﻿namespace tcgy_3_bookArchive.Forms
 {
-    partial class PublisherForm
+    partial class AddNewPublisherForm
     {
         /// <summary>
         /// Required designer variable.
@@ -108,9 +108,8 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "PublisherForm";
+            this.Name = "AddPublisherForm";
             this.Text = "Add Publisher";
-            this.Load += new System.EventHandler(this.PublisherForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

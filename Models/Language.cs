@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace tcgy_3_bookArchive.Entities
+namespace tcgy_3_bookArchive.Models
 {
-    internal class Language
+    public class Language
     {
         public int ID { get; set; }
         public string Name { get; set; } 

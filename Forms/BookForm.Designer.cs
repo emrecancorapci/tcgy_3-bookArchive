@@ -76,18 +76,18 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(48, 13);
+            this.label2.Size = new System.Drawing.Size(53, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Author* :";
+            this.label2.Text = "Authors* :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 71);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 13);
+            this.label3.Size = new System.Drawing.Size(65, 13);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Publisher* :";
+            this.label3.Text = "Publishers* :";
             // 
             // cb_publisher
             // 
@@ -116,10 +116,10 @@
             // dtp_publishDate
             // 
             this.dtp_publishDate.CustomFormat = "dd-MM-yyyy";
-            this.dtp_publishDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_publishDate.Location = new System.Drawing.Point(485, 15);
+            this.dtp_publishDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtp_publishDate.Location = new System.Drawing.Point(476, 15);
             this.dtp_publishDate.Name = "dtp_publishDate";
-            this.dtp_publishDate.Size = new System.Drawing.Size(75, 20);
+            this.dtp_publishDate.Size = new System.Drawing.Size(84, 20);
             this.dtp_publishDate.TabIndex = 3;
             // 
             // label4

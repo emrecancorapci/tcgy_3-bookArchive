@@ -1,6 +1,6 @@
 ﻿namespace tcgy_3_bookArchive.Forms
 {
-    partial class AuthorForm
+    partial class AddNewAuthorForm
     {
         /// <summary>
         /// Required designer variable.
@@ -149,7 +149,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "AuthorForm";
+            this.Name = "AddAuthorForm";
             this.Text = "Add Author";
             this.ResumeLayout(false);
             this.PerformLayout();

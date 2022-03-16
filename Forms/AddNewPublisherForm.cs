@@ -10,23 +10,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using tcgy_3_bookArchive.Data;
 using tcgy_3_bookArchive.Entities;
-using Publisher = tcgy_3_bookArchive.Entities.Publisher;
+using Publisher = tcgy_3_bookArchive.Models.Publisher;
 
 namespace tcgy_3_bookArchive.Forms
 {
-    public partial class PublisherForm : Form
+    public partial class AddNewPublisherForm : Form
     {
-        public PublisherForm()
+        public AddNewPublisherForm()
         {
             InitializeComponent();
         }
 
         private readonly BookshopDbContext _context = new BookshopDbContext();
-
-        private void PublisherForm_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void b_submit_Click(object sender, EventArgs e)
         {

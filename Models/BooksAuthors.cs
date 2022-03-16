@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace tcgy_3_bookArchive.Entities
+﻿namespace tcgy_3_bookArchive.Models
 {
-    internal class BooksAuthors
+    public class BooksAuthors
     {
         public int BookID { get; set; }
         public Book Book { get; set; }

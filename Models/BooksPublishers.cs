@@ -1,6 +1,6 @@
-﻿namespace tcgy_3_bookArchive.Entities
+﻿namespace tcgy_3_bookArchive.Models
 {
-    internal class BooksPublishers
+    public class BooksPublishers
     {
         public int BookID { get; set; }
         public Book Book { get; set; }

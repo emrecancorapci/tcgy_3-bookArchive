@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using tcgy_3_bookArchive.Entities;
+using tcgy_3_bookArchive.Models;
 
 namespace tcgy_3_bookArchive.Data
 {
